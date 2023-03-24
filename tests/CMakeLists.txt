@@ -16,7 +16,7 @@ FetchContent_Declare(
         GIT_SHALLOW TRUE)
 FetchContent_MakeAvailable(nanobench)
 
-add_definitions(-DBASE_DIR="../../")
+add_definitions(-DBASE_DIR="${PROJECT_SOURCE_DIR}")
 
 aux_source_directory(${PROJECT_SOURCE_DIR}/tests TEST_FILES)
 
